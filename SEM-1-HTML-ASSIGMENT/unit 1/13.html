@@ -1,0 +1,35 @@
+<!--Write an external JavaScript to create a function to convert text into
+bold, italic, convert uppercase, convert lowercase, charAt and find the
+substring of it.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+    <script>
+        var a;
+        a=prompt("Enter a string:");
+        var b=a.bold();
+        document.write("<br>"+b);
+
+        var I=a.italics();
+        document.write("<br><br>"+I);
+
+        var u=a.toUpperCase();
+        document.write("<br><br>"+u);
+
+        var l=a.toLowerCase();
+        document.write("<br><br>"+l);
+
+        var sl=a.slice(0,2);
+        document.write("<br><br>"+sl);
+
+        var x=a.substring(0,2);
+        document.write("<br><br>"+x);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!--Write an external JavaScript code to create a function with a return type
+and parameter to enter 5 subject marks from the user and find the
+percentage of it and check to give the Grades accordingly.
+35< Fail
+35>average
+50>second class
+60>First class
+70>Distinction-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function with return type and parameters </title>
+    <script>
+        var mark;
+        function marks(m){
+            var m;
+            if(m>=70 && m<=100)
+            {
+                document.write("Distinction");
+            }
+            else if(m>=60 && m<70)
+            {
+                document.write("First class");
+            }
+            else if(m>=50 && m<60)
+            {
+                document.write("Second Class");
+            }
+            else if(m>=35 && m<50)
+            {
+                document.write("Average");
+            }
+            else if(m<35 && m>=0)
+            {
+                document.write("Fail");
+            }
+        }
+        mark=prompt("Enter your marks:")
+        mark = eval(mark);
+        marks(mark);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
